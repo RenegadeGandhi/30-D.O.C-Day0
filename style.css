@@ -1,97 +1,124 @@
 body{
     margin: 0;
-    height: 100%;
-    font-family: 'Comic Neue', cursive;
-    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
 }
 
-.intro{
-    background-color: #37A67D;
-    padding-left: 23%;
-    padding-right: 33%;
-    color: whitesmoke;
-}
-
-.intro h1{
-    margin-bottom: 8px;
-    padding-top: 10px;
-    font-size: 320%;
-    border-bottom:1px solid whitesmoke;
-}
-
-.intro p{
-    margin: 0;
-    padding-bottom: 5px;
-    font-style: italic;
-    font-size: 100%;
-
-}
-
-.the-form{
-    padding-left: 23%;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    background-color: whitesmoke;
-    margin-bottom: 0;
-}
-
-.full-name{
-    font-weight: bold;
-    font-size: 17px;
-}
-
-#name{
-    margin-top: 6px;
-    width: 380px;
-    height: 35px;
-    margin-bottom: 15px;
-}
-
-.u-email{
-    font-weight: bold;
-    font-size: 17px;
-}
-
-#email{
-    margin-top: 6px;
-    width: 380px;
-    height: 35px;
-    margin-bottom: 15px;
-}
-
-.u-message{
-    font-weight: bold;
-    font-size: 17px;
-}
-
-#message{
-    margin-top: 6px;
-    width: 380px;
-    height: 130px;
-}
-
-button{
-    margin-top: 15px;
-    padding: 12px 40px 12px 40px;
-    background-color: #37A67D;
-    color: whitesmoke;
-    font-size: 15px;
-    border: none;
-}
-
-.footer{
-    background-color: #71D980;
-    text-align: end;
-    color: rgb(17, 4, 4);
-    font-weight: 500;
-    font-size: 80%;
-    padding: 5px;
+.navbar{
+    background-color: #00010D;
     position: fixed;
-    bottom: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.push{
+    margin-left: auto;
+}
+
+.top-image > img{
     width: 100%;
 }
 
-.footer p{
+.about{
+    background: rgb(237, 244, 247);
+}
+
+.about h2{
     margin: 0;
-    padding-right: 15px;
+    background-color: #00010D;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+.p1{
+    margin: 0;
+    text-indent: 40px;
+    padding-top: 3px;
+    padding-left:10px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.p2, .p3, .p4, .p5{
+    text-indent: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 3px;
+    padding-left:10px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.credit{
+    margin: 0;
+    text-align: end;
+    font-style: italic;
+    font-size: 0.9em;
+    padding-bottom: 20px;
+}
+
+.art-gallery{
+    background: rgb(237, 244, 247);
+}
+
+.art-gallery h2{
+    margin: 0;
+    background-color: #00010D;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+.art-gallery-wrapper{
+    display: grid;
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+}
+
+.art-gallery-wrapper > img{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 1%;
+    transition: all 0.4s ease-in-out;
+}
+
+.art-gallery-wrapper > img:hover{
+    transform: scale(1.05);
+}
+
+.art-gallery-wrapper:hover img:not(:hover){
+    opacity: 0.5;
+}
+
+footer{
+    background: #00010D;
+}
+
+footer p{
+    margin: 0;
+    color: whitesmoke;
+    text-align: end;
+    padding: 10px;
+    font-size: 80%;
 }
